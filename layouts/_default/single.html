@@ -1,0 +1,20 @@
+<head>
+  {{ partial "head.html" . }}
+</head>
+<header>
+  {{ partial "nav.html" . }}
+</header>
+<body>
+  <div class="container">
+
+    <div class="article">
+      <h1 class="article-title">{{ .Title }}</h1>
+
+      <div class="article-content">
+        {{ .Content }}
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  {{ partial "scripts.html" . }}

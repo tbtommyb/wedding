@@ -1,0 +1,51 @@
+languageCode = "en-us"
+title = "Tom and Georgie | 18 August 2017"
+baseurl = "localhost:1313"
+theme = "hugo-smpl-theme"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = "UA-XXXXXXXX-1"
+
+[[menu.main]]
+  name = "RSVP"
+  url = "/rsvp/"
+[[menu.main]]
+  name = "Venue"
+  url = "/venue/"
+[[menu.main]]
+  name = "Music"
+  url = "/music/"
+
+[params]
+  # To provide more meta data for search engines feel free to add a few information.
+  # This lines will be inserted as meta tags.
+  name = "Tom Barrett"
+  description = "Tom and Georgie's wedding site"
+
+  # Background
+  [params.background]
+    image = "images/tree_compressed.png"
+
+  # Enable and set background fade speed
+  [params.background.fade]
+    enable = true
+    speed = 500
+
+  # Header section
+  [params.header]
+    enable = true
+    title = "Tom and Georgie: 18 August 2017"
+
+  # Quote section
+  [params.quote]
+    enable = true
+    text = "Welcome to our wedding website! Here's loads of stuff about a wedding."
+
+  # Social icons section. To be replaced with more appropriate text
+  [params.social_icons]
+    enable = true
+
+  [[params.social]]
+    title = "RSVP"
+    icon = "fa-dribbble"
+    link = "/rsvp"
