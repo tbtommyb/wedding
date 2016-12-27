@@ -19,9 +19,13 @@ googleAnalytics = "UA-XXXXXXXX-1"
   url = "/venue/"
   weight = 3
 [[menu.main]]
+  name = "Accommodation"
+  url = "/accommodation"
+  weight = 4
+[[menu.main]]
   name = "Music"
   url = "/music/"
-  weight = 4
+  weight = 5
 
 [params]
   # To provide more meta data for search engines feel free to add a few information.
@@ -49,7 +53,7 @@ googleAnalytics = "UA-XXXXXXXX-1"
   # Quote section
   [params.quote]
     enable = true
-    text = "Welcome to our wedding website! Here's loads of stuff about a wedding."
+    text = "18th August 2017. Merton College, Oxford."
 
   # Button
   [params.buttons]
