@@ -1,0 +1,35 @@
+.background-img {
+  background-image: url("../img/tree_compressed.png"), url("../img/halftone.png");
+  background-position: center top, center;
+  background-repeat: no-repeat, repeat;
+  animation: .8s ease-out 0s 1 fadeIn;
+}
+
+.article {
+  width: 45%;
+  margin-left: 10%;
+}
+
+.btn {
+  width: 5em;
+  padding: .6em;
+  color: #fff;
+  background-color: #3f2b2b;
+  border-radius: 8px;
+  font-size: 1.4em;
+}
+
+body {
+  background-image: url("../img/halftone.png");
+}
+
+@keyframes fadeIn {
+  0% {
+    background-position: center -40%, center;
+    opacity: .2;
+  }
+  100% {
+    background-position: center top, center;
+    opacity: 1;
+  }
+}

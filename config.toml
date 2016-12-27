@@ -7,20 +7,30 @@ theme = "hugo-smpl-theme"
 googleAnalytics = "UA-XXXXXXXX-1"
 
 [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
   name = "RSVP"
   url = "/rsvp/"
+  weight = 2
 [[menu.main]]
   name = "Venue"
   url = "/venue/"
+  weight = 3
 [[menu.main]]
   name = "Music"
   url = "/music/"
+  weight = 4
 
 [params]
   # To provide more meta data for search engines feel free to add a few information.
   # This lines will be inserted as meta tags.
   name = "Tom Barrett"
   description = "Tom and Georgie's wedding site"
+
+  # Custom CSS
+  custom_css = ["assets/css/main.css", "assets/css/background.css"]
 
   # Background
   [params.background]
@@ -41,11 +51,10 @@ googleAnalytics = "UA-XXXXXXXX-1"
     enable = true
     text = "Welcome to our wedding website! Here's loads of stuff about a wedding."
 
-  # Social icons section. To be replaced with more appropriate text
-  [params.social_icons]
+  # Button
+  [params.buttons]
     enable = true
 
-  [[params.social]]
+  [[params.button]]
     title = "RSVP"
-    icon = "fa-dribbble"
     link = "/rsvp"
