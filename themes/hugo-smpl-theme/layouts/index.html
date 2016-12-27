@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+{{ "<!--" | safeHTML}}
+  SMPL by BlackTie.co
+  http://blacktie.co/ | @BlackTie_co
+  Free for personal and commercial use under the CCA 3.0 license (blacktie.co/about-themes/)
+{{ "-->" | safeHTML }}
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="background-img">
+    <header>
+      {{ partial "nav.html" . }}
+    </header>
+    <div class="container">
+      <!-- Title -->
+      {{ if .Site.Params.header.enable }}
+        {{ partial "header.html" . }}
+      {{ end }}
+
+      <!-- Quote -->
+      {{ if .Site.Params.quote.enable }}
+        {{ partial "quote.html" . }}
+      {{ end }}
+
+      <!-- Social -->
+      {{ if .Site.Params.buttons.enable }}
+        {{ partial "button.html" . }}
+      {{ end }}
+    </div><!-- /.container -->
+
+
+
+  </body>
+</html>

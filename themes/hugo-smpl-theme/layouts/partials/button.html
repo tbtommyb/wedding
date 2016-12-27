@@ -1,0 +1,7 @@
+<div class="row centered">
+  {{ range .Site.Params.button }}
+  <a href="{{ .link }}">
+    <div class="btn centered">{{ .title }}</div>
+  </a>
+  {{ end }}
+</div>
