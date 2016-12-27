@@ -5,9 +5,24 @@
   animation: .8s ease-out 0s 1 fadeIn;
 }
 
+.container {
+  padding-top: 5em;
+}
+
 .article {
+  display: inline-block;
   width: 45%;
   margin-left: 10%;
+}
+
+.article-image.right {
+  position: absolute;
+  display: inline-block;
+  max-width: 30%;
+}
+
+.article-image img {
+  width: 100%;
 }
 
 .btn {
@@ -27,6 +42,9 @@ body {
   0% {
     background-position: center -40%, center;
     opacity: .2;
+  }
+  75% {
+    opacity: .4;
   }
   100% {
     background-position: center top, center;

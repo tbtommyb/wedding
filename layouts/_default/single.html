@@ -14,5 +14,10 @@
         {{ .Content }}
       </div>
     </div>
+    {{ if $.Params.image_source }}
+      <div class="article-image right">
+        <img src={{ printf "/assets/img/%s" $.Params.image_source }}>
+      </div>
+    {{ end }}
 
   </div><!-- /.container -->
