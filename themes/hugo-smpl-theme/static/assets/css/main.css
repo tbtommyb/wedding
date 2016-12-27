@@ -126,10 +126,13 @@ h1 {
 	font-size: 70px;
 }
 
-.w {
-	margin-top: 60px;
-}
 .w i {
 	font-size: 26px;
 	padding: 12px;
+}
+
+/* Inputs */
+
+label {
+  display: block;
 }
