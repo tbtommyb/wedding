@@ -8,7 +8,7 @@ image_source = "test.jpg"
 
 ## Ceremony
 
-The ceremony will be at Merton College Chapel at [1.45pm]. The address is:
+The ceremony will be at Merton College Chapel at 1.30pm. The address is:
 
 Merton College  
 Merton Street  
