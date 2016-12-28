@@ -8,11 +8,11 @@ image_source = "test.jpg"
 
 We really hope you can attend. Please fill out the following form for each person:
 
-<form id="rsvp">
+<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxRo8H99CLeWAQ7sICqzZBu27tGUn25gspVprSbr2-k8Mm0uSo_/exec">
   <fieldset>
     <legend>Name</legend>
     <label>First name<input type="text" name="first_name"></label>
-    <label>Second name<input type="text" name="second_surname"></label>
+    <label>Second name<input type="text" name="second_name"></label>
   </fieldset>
   <fieldset>
     <legend>Attending</legend>
@@ -27,5 +27,7 @@ We really hope you can attend. Please fill out the following form for each perso
     <label><input type="radio" name="dietary_requirements" value="other">Other</label>
     <label>If other please specify: <input type="text" name="dietary_requirements"></label>
   </fieldset>
-  <input type="submit"></input>
+  <input type="submit" class="btn"></input>
 </form>
+
+<script data-cfasync="false" type="text/javascript" src="/assets/js/handleFormSubmit.js"></script>
