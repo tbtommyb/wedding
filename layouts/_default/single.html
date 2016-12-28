@@ -13,7 +13,9 @@
       <div class="article-content">
         {{ .Content }}
       </div>
-      {{ partial "thankyou.html" . }}
+      {{ if $.Params.thankyou }}
+        {{ partial "thankyou.html" . }}
+      {{ end }}
     </div>
     {{ if $.Params.image_source }}
       <div class="article-image right">
