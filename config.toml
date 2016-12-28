@@ -1,7 +1,8 @@
 languageCode = "en-us"
 title = "Tom and Georgie | 18 August 2017"
-baseurl = "localhost:1313"
+baseurl = ""
 theme = "hugo-smpl-theme"
+canonifyURLs = false
 
 # Enter your tracking code to enable Google analytics
 googleAnalytics = "UA-XXXXXXXX-1"
