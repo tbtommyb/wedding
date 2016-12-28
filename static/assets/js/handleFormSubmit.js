@@ -1,6 +1,17 @@
+var elGForm = document.getElementById('gform');
+var elArticleContent = document.querySelector('.article-content');
+var elOther = document.getElementById('other');
+var elOtherDetails = document.getElementById('other_details');
+
+var forEach = function(array, callback, scope) {
+  for(var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
+  }
+};
+
 // get all data in form and return object
 function getFormData() {
-  var elements = document.getElementById('gform').elements; // all form elements
+  var elements = elGForm.elements; // all form elements
   var fields = Object.keys(elements).map(function(k) {
     if(elements[k].name !== undefined) {
       return elements[k].name;
@@ -37,7 +48,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   // xhr.withCredentials = true;
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   xhr.onreadystatechange = function() {
-    document.querySelector('.article-content').style.display = 'none'; // hide form
+    elArticleContent.style.display = 'none'; // hide form
     document.getElementById('thankyou_message').style.display = 'block';
     document.getElementById('reset_form').addEventListener('click', resetForm, false);
     return;
@@ -51,13 +62,18 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
 
 function loaded() {
   // bind to the submit event of our form
-  var form = document.getElementById('gform');
-  form.addEventListener('submit', handleFormSubmit, false);
+  elGForm.addEventListener('submit', handleFormSubmit, false);
+  var radios = document.querySelectorAll('input[name=dietary_requirements');
+  forEach(radios, function(i, el) {
+    el.addEventListener('change', function() {
+      elOtherDetails.required = elOther.checked;
+    });
+  });
 }
 
 function resetForm() {
-  document.getElementById('gform').reset();
-  document.querySelector('.article-content').style.display = 'block';
+  elGForm.reset();
+  elArticleContent.style.display = 'block';
   document.getElementById('thankyou_message').style.display = 'none';
 }
 
