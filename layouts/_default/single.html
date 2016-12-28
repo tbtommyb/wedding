@@ -13,6 +13,7 @@
       <div class="article-content">
         {{ .Content }}
       </div>
+      {{ partial "thankyou.html" . }}
     </div>
     {{ if $.Params.image_source }}
       <div class="article-image right">
