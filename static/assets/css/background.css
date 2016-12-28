@@ -31,9 +31,17 @@ fieldset {
   z-index: -1;
 }
 
+@media only screen and (max-width: 600px) {
+  iframe {
+    max-width: 300px;
+    max-height: 225px;
+    border: 0;
+  }
+}
+
 iframe {
-  max-width: 500px;
-  max-height: 375px;
+  width: 600px;
+  height: 450px;
   border: 0;
 }
 
@@ -88,6 +96,7 @@ iframe {
 .btn a {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn.centered {
