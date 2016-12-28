@@ -1,7 +1,23 @@
-.body {
+body {
   background-image: url("../img/halftone.png");
   background-position: center;
   background-repeat: repeat;
+}
+
+#thankyou_message {
+  display: none;
+}
+
+label {
+  max-width: 14em;
+}
+
+input[type="text"] {
+  float: right;
+}
+
+fieldset {
+  border: #bebdb8 solid 1px;
 }
 
 .tree-img {
@@ -15,14 +31,25 @@
   z-index: -1;
 }
 
+iframe {
+  max-width: 500px;
+  max-height: 375px;
+  border: 0;
+}
+
 .container {
-  padding-top: 5em;
+  padding: 5em 1em 0 1em;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    padding: 2em 1em 0 1em;
+  }
 }
 
 .article {
   display: inline-block;
   width: 45%;
-  margin-left: 10%;
 }
 
 .article-image.right {
@@ -36,17 +63,45 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+  .article-image,
+  .article-image.right {
+    display: none;
+  }
+
+  .article {
+    width: 100%;
+  }
+}
+
 .btn {
   width: 5em;
   padding: .6em;
-  color: #fff;
-  background-color: #3f2b2b;
+  margin: .5em;
+  color: #f2f2f2;
+  background-color: #5b5a56;
   border-radius: 8px;
-  font-size: 1.4em;
+  font-size: 1em;
+  font-family: 'EB Garamond', serif;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn.centered {
+  margin: .5em auto;
 }
 
 .quote {
   margin-top: 23em;
+}
+
+@media only screen and (max-width: 400px) {
+  .quote {
+    margin-top: 18em;
+  }
 }
 
 .quote p {
