@@ -6,4 +6,8 @@ image_source = "test.jpg"
 
 +++
 
-This is going to be the accommodation page.
+There will be plenty of camping space at the wedding venue.
+
+If you're feeling a little less adventurous, here are some local places to stay:
+
+[list of suggestions]
