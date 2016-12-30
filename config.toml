@@ -23,10 +23,6 @@ googleAnalytics = "UA-XXXXXXXX-1"
   name = "Accommodation"
   url = "/accommodation"
   weight = 4
-[[menu.main]]
-  name = "Music"
-  url = "/music/"
-  weight = 5
 
 [params]
   # To provide more meta data for search engines feel free to add a few information.
