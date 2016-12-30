@@ -2,7 +2,7 @@
 date = "2016-12-26T23:23:26Z"
 title = "Accommodation"
 draft = false
-image_source = "test.jpg"
+image_source = "1.jpg"
 
 +++
 

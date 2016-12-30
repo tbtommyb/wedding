@@ -2,9 +2,9 @@
 date = "2016-12-26T23:23:26Z"
 title = "RSVP"
 draft = false
-image_source = "test.jpg"
+image_source = "2.jpg"
 thankyou = true
-
+script = "handleFormSubmit.js"
 +++
 
 We really hope you can attend. Please fill out the following form for each person:
@@ -28,7 +28,10 @@ We really hope you can attend. Please fill out the following form for each perso
     <label><input type="radio" name="dietary_requirements" value="other" id="other">Other</label>
     <label>If other please specify: <input type="text" name="requirements_details" id="other_details"></label>
   </fieldset>
+  <fieldset>
+    <legend>Music (optional)</legend>
+    <p>We're putting together an awesome playlist and need your help! Let us know the songs you think we should play.</p>
+    <textarea cols="50" rows="10" name="music"></textarea>
+  </fieldset>
   <input type="submit" class="btn"></input>
 </form>
-
-<script data-cfasync="false" type="text/javascript" src="/assets/js/handleFormSubmit.js"></script>
