@@ -17,10 +17,13 @@
         {{ partial "thankyou.html" . }}
       {{ end }}
     </div>
-    {{ if $.Params.image_source }}
+    {{ if isset .Params "image_source" }}
       <div class="article-image right">
         <img src={{ printf "/assets/img/%s" $.Params.image_source }}>
       </div>
     {{ end }}
 
   </div><!-- /.container -->
+  {{ if isset .Params "script" }}
+    <script type="text/javascript" src={{ printf "/assets/js/%s" $.Params.script }}></script>
+  {{ end }}
