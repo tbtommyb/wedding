@@ -3,7 +3,7 @@ body {
   font-family: 'EB Garamond', serif;
   font-weight: 300;
   font-size: 16px;
-  color: #5b5a56;
+  color: #0f0f32;
   margin: 0;
 
   -webkit-font-smoothing: antialiased;
@@ -53,20 +53,30 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #5b5a56;
+  color: #0f0f32;
 }
 
 .nav-links a:hover {
-  color: #000;
+  color: #3636a8;
+  text-decoration: none;
+
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     margin: 0;
-    color: #5b5a56;
+    color: #0f0f32;
 }
 
+h1, h2 {
+  font-weight: 600;
+}
 
 /* Paragraph & Typographic */
 p {
@@ -82,33 +92,18 @@ p {
 
 /* Links */
 a {
-    color: #f39c12;
+    color: #7200ba;
+    text-decoration: none;
     word-wrap: break-word;
-
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
+  text-decoration: underline;
+  outline: 0;
 }
 
-a:before,
-a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
- hr {
+hr {
     display: block;
     height: 1px;
     border: 0;

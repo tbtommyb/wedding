@@ -1,23 +1,28 @@
 body {
-  background-image: url("../img/halftone.png");
+  background:
+    linear-gradient(
+      rgba(138, 149, 227, 0.28),
+      rgba(59, 58, 131, 0.53)
+    ), url(../img/halftone.png);
   background-position: center;
   background-repeat: repeat;
+}
+
+label {
+  margin: .2em;
 }
 
 #thankyou_message {
   display: none;
 }
 
-label {
-  max-width: 14em;
-}
-
 input[type="text"] {
   float: right;
+  width: 25em;
 }
 
 fieldset {
-  border: #bebdb8 solid 1px;
+  border: rgba(15, 15, 50, 0.18) solid 1px;
 }
 
 .tree-img {
@@ -43,6 +48,7 @@ iframe {
   width: 600px;
   height: 450px;
   border: 0;
+  margin: 1em 0;
 }
 
 .container {

@@ -9,27 +9,27 @@
     {{ partial "head.html" . }}
   </head>
   <body>
-    <div class="tree-img"></div>
-    <header>
-      {{ partial "nav.html" . }}
-    </header>
-    <div class="container">
-      <!-- Title -->
-      {{ if .Site.Params.header.enable }}
-        {{ partial "header.html" . }}
-      {{ end }}
+    <div class="tree-img">
+      <header>
+        {{ partial "nav.html" . }}
+      </header>
+      <div class="container">
+        <!-- Title -->
+        {{ if .Site.Params.header.enable }}
+          {{ partial "header.html" . }}
+        {{ end }}
 
-      <!-- Quote -->
-      {{ if .Site.Params.quote.enable }}
-        {{ partial "quote.html" . }}
-      {{ end }}
+        <!-- Quote -->
+        {{ if .Site.Params.quote.enable }}
+          {{ partial "quote.html" . }}
+        {{ end }}
 
-      <!-- Social -->
-      {{ if .Site.Params.buttons.enable }}
-        {{ partial "button.html" . }}
-      {{ end }}
-    </div><!-- /.container -->
-
+        <!-- Social -->
+        {{ if .Site.Params.buttons.enable }}
+          {{ partial "button.html" . }}
+        {{ end }}
+      </div><!-- /.container -->
+    </div>
 
 
   </body>
