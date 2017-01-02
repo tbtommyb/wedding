@@ -22,6 +22,9 @@
         <img src={{ printf "/assets/img/%s" $.Params.image_source }}>
       </div>
     {{ end }}
+    <div class="teddy-img">
+      <img alt="teddy bear" src="{{ printf "/assets/img/%s" .Site.Params.teddy.image }}">
+    </div>
 
   </div><!-- /.container -->
   {{ if isset .Params "script" }}
