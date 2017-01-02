@@ -1,0 +1,7 @@
+<!-- Custom JS for this template -->
+{{ range .Site.Params.custom_js }}
+  <script type="text/javascript" src={{ printf "/assets/js/%s" . }}></script>
+{{ end }}
+{{ if isset $.Params "script" }}
+  <script type="text/javascript" src={{ printf "/assets/js/%s" $.Params.script }}></script>
+{{ end }}
