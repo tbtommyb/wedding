@@ -31,8 +31,9 @@ googleAnalytics = "UA-89723923-1"
   name = "Tom Barrett"
   description = "Tom and Georgie's wedding site"
 
-  # Custom CSS
+  # Custom files
   custom_css = ["assets/css/main.css", "assets/css/custom.css"]
+  custom_js = []
 
   # Background
   [params.background]

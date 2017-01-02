@@ -1,32 +1,35 @@
-<head>
-  {{ partial "head.html" . }}
-</head>
-<body>
-  <header>
-    {{ partial "nav.html" . }}
-  </header>
-  <div class="container">
+<html>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <header>
+      {{ partial "nav.html" . }}
+    </header>
+    <div class="container">
 
-    <div class="article">
-      <h1 class="article-title">{{ .Title }}</h1>
+      <div class="article">
+        <h1 class="article-title">{{ .Title }}</h1>
 
-      <div class="article-content">
-        {{ .Content }}
+        <div class="article-content">
+          {{ .Content }}
+        </div>
+        {{ if .Params.thankyou }}
+          {{ partial "thankyou.html" . }}
+        {{ end }}
       </div>
-      {{ if $.Params.thankyou }}
-        {{ partial "thankyou.html" . }}
+      {{ if isset .Params "image_source" }}
+        <div class="article-image right">
+          <img src={{ printf "/assets/img/%s" $.Params.image_source }}>
+        </div>
       {{ end }}
-    </div>
-    {{ if isset .Params "image_source" }}
-      <div class="article-image right">
-        <img src={{ printf "/assets/img/%s" $.Params.image_source }}>
+      <div class="teddy-img">
+        <img alt="teddy bear" src="{{ printf "/assets/img/%s" .Site.Params.teddy.image }}">
       </div>
-    {{ end }}
-    <div class="teddy-img">
-      <img alt="teddy bear" src="{{ printf "/assets/img/%s" .Site.Params.teddy.image }}">
-    </div>
 
-  </div><!-- /.container -->
-  {{ if isset .Params "script" }}
-    <script type="text/javascript" src={{ printf "/assets/js/%s" $.Params.script }}></script>
-  {{ end }}
+    </div><!-- /.container -->
+
+    {{ partial "js.html" . }}
+  </body>
+</html>
+
