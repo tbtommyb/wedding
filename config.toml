@@ -4,8 +4,7 @@ baseurl = ""
 theme = "hugo-smpl-theme"
 canonifyURLs = false
 
-# Enter your tracking code to enable Google analytics
-googleAnalytics = "UA-XXXXXXXX-1"
+googleAnalytics = "UA-89723923-1"
 
 [[menu.main]]
   name = "Home"
@@ -23,19 +22,25 @@ googleAnalytics = "UA-XXXXXXXX-1"
   name = "Accommodation"
   url = "/accommodation"
   weight = 4
+[[menu.main]]
+  name = "Giftlist"
+  url = "/giftlist"
+  weight = 5
 
 [params]
-  # To provide more meta data for search engines feel free to add a few information.
-  # This lines will be inserted as meta tags.
   name = "Tom Barrett"
   description = "Tom and Georgie's wedding site"
 
   # Custom CSS
-  custom_css = ["assets/css/main.css", "assets/css/background.css"]
+  custom_css = ["assets/css/main.css", "assets/css/custom.css"]
 
   # Background
   [params.background]
     image = "images/tree_compressed.png"
+
+  # Teddy image
+  [params.teddy]
+    image = "bear_smaller.png"
 
   # Enable and set background fade speed
   [params.background.fade]
