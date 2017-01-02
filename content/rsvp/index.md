@@ -2,7 +2,7 @@
 date = "2016-12-26T23:23:26Z"
 title = "RSVP"
 draft = false
-image_source = "2.jpg"
+image_source = "1.jpg"
 thankyou = true
 script = "handleFormSubmit.js"
 +++

@@ -2,7 +2,7 @@
 date = "2016-12-26T23:23:26Z"
 title = "Venue"
 draft = false
-image_source = "test.jpg"
+image_source = "7.jpg"
 
 +++
 
@@ -28,5 +28,7 @@ Oxfordshire
 OX29 7QD
 
 It's about 20 minutes drive west of Oxford along the A420. If you aren't driving we'll have transport from the chapel to the venue.
+
+There will be a cash bar at the venue.
 
 <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJYar-45jJdkgRk1ICsexB88s&key=AIzaSyBG3Io5X9keI-N_tPLavwc7sG56agy9C6c" allowfullscreen></iframe>
