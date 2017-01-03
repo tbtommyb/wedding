@@ -14,7 +14,7 @@ body {
 .nav {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 1em;
   text-align: right;
 }
 
@@ -56,8 +56,8 @@ body {
 }
 
 .nav-links a:hover {
-  color: #3636a8;
-  text-decoration: none;
+  color: #15213f;
+  text-decoration: underline;
 
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -91,7 +91,7 @@ p {
 
 /* Links */
 a {
-    color: #7200ba;
+    color: #6271bd;
     text-decoration: none;
     word-wrap: break-word;
 }
@@ -130,11 +130,6 @@ h1 {
   h1 {
     font-size: 2em;
   }
-}
-
-.w i {
-	font-size: 26px;
-	padding: 12px;
 }
 
 /* Inputs */
