@@ -12,8 +12,8 @@ We really hope you can attend. Please fill out the following form for each perso
 <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxRo8H99CLeWAQ7sICqzZBu27tGUn25gspVprSbr2-k8Mm0uSo_/exec">
   <fieldset>
     <legend>Name (required)</legend>
-    <label>First name<input type="text" name="first_name" required></label>
-    <label>Second name<input type="text" name="second_name" required></label>
+    <label>First&nbsp;name<input type="text" name="first_name" required></label>
+    <label>Second&nbsp;name<input type="text" name="second_name" required></label>
   </fieldset>
   <fieldset>
     <legend>Attending (required)</legend>
