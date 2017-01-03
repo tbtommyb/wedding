@@ -1,3 +1,5 @@
 <div class="quote centered">
-  <p>{{ .Site.Params.quote.text | markdownify }}</p>
+  {{ range .Site.Params.quote.lines }}
+  <p class="quote-line">{{ . | markdownify }}</p>
+  {{ end }}
 </div>
