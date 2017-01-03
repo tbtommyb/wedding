@@ -15,7 +15,7 @@
 
 /* Front page */
 
-.tree-img {
+.tree-background {
   background-image: url("../img/tree_compressed.png");
   width: 100%;
   height: 900px;
@@ -146,22 +146,53 @@ iframe {
 /* Buttons */
 
 .btn {
-  width: 5em;
-  padding: .6em;
-  margin: .5em;
-  color: #f2f2f2;
-  background-color: #5b5a56;
-  border-radius: 8px;
-  font-size: 1em;
-  font-family: 'EB Garamond', serif;
-}
-
-.btn a {
-  text-decoration: none;
-  color: #fff;
+  display: inline-block;
+  outline: none;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: 1em 'EB Garamond', serif;
+  padding: .5em 2em .55em;
+  margin: 1em 0;
+  border-radius: .5em;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
 
-.btn.centered {
-  margin: .5em auto;
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn.right-align {
+  float: right;
+}
+/* Button colour options */
+
+.orange {
+  color: #fef4e9;
+  border: solid 1px #da7c0c;
+  background: #f78d1d;
+  background: linear-gradient(#faa51a, #f47a20);
+}
+
+.orange:hover {
+  background: #f47c20;
+  background: linear-gradient(#f88e11, #f06015);
+}
+
+.orange:active {
+  color: #fcd3a5;
+  background: linear-gradient(#f47a20, #faa51a);
+}
+
+.btn.orange a {
+  color: #fef4e9;
+}
+
+.btn.orange:active a {
+  color: #fcd3a5;
 }
