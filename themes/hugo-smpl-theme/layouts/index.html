@@ -8,29 +8,27 @@
   <head>
     {{ partial "head.html" . }}
   </head>
-  <body>
-    <div class="tree-background">
-      <header>
-        {{ partial "nav.html" . }}
-      </header>
-      <div class="container">
-        <!-- Title -->
-        {{ if .Site.Params.header.enable }}
-          {{ partial "header.html" . }}
-        {{ end }}
+  <body class="front-page">
+    <div class="tree-background"></div>
+    <header>
+      {{ partial "nav.html" . }}
+    </header>
+    <div class="container">
+      <!-- Title -->
+      {{ if .Site.Params.header.enable }}
+        {{ partial "header.html" . }}
+      {{ end }}
 
-        <!-- Quote -->
-        {{ if .Site.Params.quote.enable }}
-          {{ partial "quote.html" . }}
-        {{ end }}
+      <!-- Quote -->
+      {{ if .Site.Params.quote.enable }}
+        {{ partial "quote.html" . }}
+      {{ end }}
 
-        <!-- Social -->
-        {{ if .Site.Params.buttons.enable }}
-          {{ partial "button.html" . }}
-        {{ end }}
-      </div><!-- /.container -->
-    </div>
-
+      <!-- Social -->
+      {{ if .Site.Params.buttons.enable }}
+        {{ partial "button.html" . }}
+      {{ end }}
+    </div><!-- /.container -->
     {{ partial "js.html" . }}
   </body>
 </html>

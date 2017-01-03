@@ -13,7 +13,37 @@
   max-height: 100%;
 }
 
+.mobile-advice {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .teddy-img {
+    display: none;
+  }
+
+  .mobile-advice {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .teddy-img {
+    width: 10em;
+  }
+}
+
 /* Front page */
+
+body.front-page {
+  background:
+    linear-gradient(
+      rgba(255, 255, 204, .2),
+      rgba(255, 255, 204, .2)
+    ), url(../img/halftone.png);
+  background-position: center;
+  background-repeat: repeat;
+}
 
 .tree-background {
   background-image: url("../img/tree_compressed.png");
@@ -44,19 +74,22 @@
   margin-top: 23em;
 }
 
-@media only screen and (max-width: 400px) {
-  .quote {
-    margin-top: 18em;
-  }
-}
-
 .quote p {
   font-size: 2.2em;
 }
 
+@media only screen and (max-width: 400px) {
+  .quote {
+    margin-top: 10em;
+  }
+  .tree-background {
+    top: -6em;
+  }
+}
+
 /* Single pages */
 
-body {
+body.single-page {
   background:
     linear-gradient(
       rgba(138, 149, 227, 0.28),
@@ -74,7 +107,7 @@ label {
 
 input[type="text"] {
   float: right;
-  width: 25em;
+  width: 23em;
 }
 
 fieldset {
@@ -83,6 +116,10 @@ fieldset {
 
 #thankyou_message {
   display: none;
+}
+
+textarea {
+  width: 100%;
 }
 
 /* Google Maps iframe */
@@ -96,10 +133,10 @@ fieldset {
 }
 
 iframe {
-  width: 600px;
+  width: 100%;
   height: 450px;
   border: 0;
-  margin: 1em 0;
+  margin: 1em auto;
 }
 
 /* Single page layout */
