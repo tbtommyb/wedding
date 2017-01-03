@@ -56,7 +56,7 @@ googleAnalytics = "UA-89723923-1"
   # Quote section
   [params.quote]
     enable = true
-    text = "18th August 2017. Merton College, Oxford."
+    lines = ["18th August 2017", "Merton College, Oxford"]
 
   # Button
   [params.buttons]

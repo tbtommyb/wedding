@@ -33,5 +33,5 @@ We really hope you can attend. Please fill out the following form for each perso
     <p>We're putting together an awesome playlist and need your help! Let us know the songs you think we should play.</p>
     <textarea cols="50" rows="10" name="music"></textarea>
   </fieldset>
-  <input type="submit" class="right-align btn orange"></input>
+  <input type="submit" class="right-align btn navy"></input>
 </form>
