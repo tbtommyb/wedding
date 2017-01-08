@@ -99,7 +99,8 @@ label {
 
 input[type="text"] {
   float: right;
-  width: 23em;
+  max-width: 20em;
+  width: 100%;
 }
 
 fieldset {
