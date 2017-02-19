@@ -8,26 +8,27 @@ image_source = "7.jpg"
 
 ## Ceremony
 
-The ceremony will be at Merton College Chapel at **1.30pm** sharp. The address is:
+The ceremony will be at Merton College Chapel at **1.15pm**. The address is:
 
 Merton College  
 Merton Street  
 Oxford  
 OX1 4JD
 
-There will be parking available about ten minutes' walk from the chapel. If you need somewhere more accessible please [let us know](mailto:tomandgeorgie2017@gmail.com) and we'll try to sort something out.
+There will be some parking spaces available about 15-20 minutes' walk from the chapel at St Catherine's College on Manor Road (OX1 3UJ).
 
-## Reception
+## Wedding breakfast and reception
 
-The wedding reception will be at:
+The wedding breakfast and reception will be at:
 
+Riverside Weddings  
 Newbridge Farm  
 Newbridge  
 Standlake  
 Oxfordshire  
 OX29 7QD
 
-It's about 20 minutes drive west of Oxford along the A420. If you aren't driving we'll have transport from the chapel to the venue.
+It's about 20 minutes drive west of Oxford along the A420. Look for the Maybush or Rose Revived pubs and then turn off the A415 at the sign for Newbridge Farm.
 
 There will be a cash bar at the venue.
 
