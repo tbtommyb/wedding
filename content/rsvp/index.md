@@ -13,7 +13,7 @@ We really hope you can attend. Please fill out the following form for each perso
   <fieldset>
     <legend>Name (required)</legend>
     <label>First&nbsp;name<input type="text" name="first_name" required></label>
-    <label>Second&nbsp;name<input type="text" name="second_name" required></label>
+    <label>Surname<input type="text" name="second_name" required></label>
   </fieldset>
   <fieldset>
     <legend>Attending (required)</legend>
@@ -27,6 +27,11 @@ We really hope you can attend. Please fill out the following form for each perso
     <label><input type="radio" name="dietary_requirements" value="vegan">Vegan</label>
     <label><input type="radio" name="dietary_requirements" value="other" id="other">Other</label>
     <label>If other please specify: <input type="text" name="requirements_details" id="other_details"></label>
+  </fieldset>
+  <fieldset>
+    <legend>Coaches (optional)</legend>
+    <p>There will be limited spaces on coaches going from the ceremony to the wedding breakfast, allocated on a first-come-first-served basis. If you are attending the wedding breakfast and would like to request a coach place, please tick the box below. We will confirm via email.</p>
+    <label><input type="checkbox" name="coach" value="yes">Request a coach place</label>
   </fieldset>
   <fieldset>
     <legend>Music (optional)</legend>
