@@ -74,12 +74,14 @@ body {
 .quote {
   margin-top: 18em;
   background-color: rgba(232, 232, 232, 0.54);
+  padding-bottom: .6em;
 }
 
 .quote-line {
   font-size: 2.2em;
   margin: 0;
   padding: .3em;
+  line-height: 1.2em;
 }
 
 @media only screen and (max-width: 400px) {
@@ -95,12 +97,12 @@ body {
 
 label {
   margin: .2em;
+  font-size: 1.2em;
 }
 
 input[type="text"] {
   float: right;
-  max-width: 20em;
-  width: 100%;
+  max-width: 15em;
 }
 
 fieldset {
@@ -111,8 +113,12 @@ fieldset {
   display: none;
 }
 
+input[type="text"],
 textarea {
+  border: 2px solid rgba(15, 15, 50, 0.18);
   width: 100%;
+  font-size: 1em;
+
 }
 
 /* Google Maps iframe */
