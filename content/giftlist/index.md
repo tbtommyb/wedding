@@ -8,4 +8,6 @@ image_source = "3.jpg"
 
 Please don't feel obliged to give us any kind of gift - you being there is enough for us!
 
-If you do want to give a gift, we've been living together for a couple of years so we have all the things we need. After the wedding we are planning to go to travelling and working abroad for a year, so we'd be very grateful for any contribution you wanted to make to that.
+If you do want to give a gift, we've been living together for a couple of years so we have all the things we need.
+
+After our wedding we are going to travel and work abroad for a year, so we'd be very grateful for any contribution you wanted to make to that. If you prefer, you can make an online gift by clicking [here](https://www.paypal.me/tomandgeorgie).
