@@ -7,7 +7,9 @@ thankyou = true
 script = "handleFormSubmit.js"
 +++
 
-We really hope you can attend. Please fill out the following form for each person:
+We really hope you can attend! We'd be grateful if you could RSVP within **two weeks** of receiving the invitation.
+
+Please fill out the following form for each person:
 
 <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxRo8H99CLeWAQ7sICqzZBu27tGUn25gspVprSbr2-k8Mm0uSo_/exec">
   <fieldset>
