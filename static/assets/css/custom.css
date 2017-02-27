@@ -156,6 +156,7 @@ iframe {
 .article-image.right {
   position: absolute;
   right: 6%;
+  top: 8.5%;
   display: inline-block;
   max-width: 30%;
 }
