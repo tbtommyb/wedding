@@ -26,6 +26,10 @@ Glamping at [The Maybush](http://www.themaybush.com/accommodation.html) means yo
 
 [Oxford Witney Hotel](https://www.oxfordwitneyhotel.co.uk/partner/oxford-witney/)
 
+## Cumnor
+
+[Bear & Ragged Staff](http://www.bearandraggedstaff.com/)
+
 ## Oxford
 
 Approximately 20 minutes from the reception venue by car. These hotels are all within walking distance of the ceremony venue.

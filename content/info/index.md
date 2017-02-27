@@ -6,6 +6,10 @@ image_source = "7.jpg"
 
 +++
 
+## Dress code
+
+The dress code is summer formal.
+
 ## Ceremony
 
 The ceremony will be at Merton College Chapel at **1.15pm**. The address is:
