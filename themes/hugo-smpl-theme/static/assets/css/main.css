@@ -12,10 +12,16 @@ body {
 /* Navbar */
 
 .nav {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1em;
+  margin: 0 3.5em 0 0;
+  padding: 1em 0;
   text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .nav-logo {
