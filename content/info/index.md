@@ -27,7 +27,9 @@ The traffic in Oxford on a Friday afternoon can be very heavy so we recommend al
 
 ## Reception
 
-The reception venue is just outside Oxford. If you are attending the wedding breakfast we will provide coaches from Merton College (please let us know when RSVPing if you would like a place). If you are attending the evening party, please arrive by **7.00pm**, in time for the speeches.
+The reception venue is just outside Oxford. If you are attending the wedding breakfast we will provide coaches from Merton College. Please let us know when RSVPing if you would like a place.
+
+If you are attending the evening party, please arrive by **7.00pm**, in time for the speeches.
 
 The address is:
 
