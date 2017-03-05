@@ -12,7 +12,9 @@ The dress code is summer formal.
 
 ## Ceremony
 
-The ceremony will be at Merton College Chapel at **1.15pm**. The address is:
+Everyone is invited to the wedding ceremony at Merton College Chapel. Please arrive by **1.15pm**.
+
+The address is:
 
 Merton College  
 Merton Street  
@@ -23,9 +25,11 @@ There will be some parking spaces available about 15-20 minutes' walk from the c
 
 The traffic in Oxford on a Friday afternoon can be very heavy so we recommend allowing an extra 20 minutes for your journey time.
 
-## Wedding breakfast and reception
+## Reception
 
-The wedding breakfast and reception will be at:
+The reception venue is just outside Oxford. If you are attending the wedding breakfast we will provide coaches from Merton College (please let us know when RSVPing if you would like a place). If you are attending the evening party, please arrive by **19.30**, in time for the speeches.
+
+The address is:
 
 Riverside Weddings  
 Newbridge Farm  
