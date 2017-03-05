@@ -1,6 +1,6 @@
 +++
 date = "2016-12-26T23:23:26Z"
-title = "Venue"
+title = "Info"
 draft = false
 image_source = "7.jpg"
 

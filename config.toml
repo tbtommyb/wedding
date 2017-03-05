@@ -8,23 +8,23 @@ googleAnalytics = "UA-89723923-1"
 
 [[menu.main]]
   name = "Home"
-  url = "/"
+  url = ""
   weight = 1
 [[menu.main]]
   name = "RSVP"
-  url = "/rsvp/"
+  url = "rsvp"
   weight = 2
 [[menu.main]]
-  name = "Venue"
-  url = "/venue/"
+  name = "Info"
+  url = "info"
   weight = 3
 [[menu.main]]
   name = "Accommodation"
-  url = "/accommodation"
+  url = "accommodation"
   weight = 4
 [[menu.main]]
   name = "Giftlist"
-  url = "/giftlist"
+  url = "giftlist"
   weight = 5
 
 [params]
