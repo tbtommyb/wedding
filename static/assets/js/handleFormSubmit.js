@@ -2,6 +2,9 @@ var elGForm = document.getElementById('gform');
 var elArticleContent = document.querySelector('.article-content');
 var elOther = document.getElementById('other');
 var elOtherDetails = document.getElementById('other_details');
+var elNotAttending = document.getElementById('not-attending');
+var elNoDietaryRequirements = document.getElementById('none');
+var elSubmitButton = document.getElementById('submit');
 
 var forEach = function(array, callback, scope) {
   for(var i = 0; i < array.length; i++) {
@@ -39,40 +42,46 @@ function getFormData() {
   return data;
 }
 
-function handleFormSubmit(event) {  // handles form submit withtout any jquery
-  event.preventDefault();           // we are submitting via xhr below
-  var data = getFormData();         // get the values submitted in the form
-  var url = event.target.action;  //
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', url);
-  // xhr.withCredentials = true;
-  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  xhr.onreadystatechange = function() {
-    elArticleContent.style.display = 'none'; // hide form
-    document.getElementById('thankyou_message').style.display = 'block';
-    document.getElementById('reset_form').addEventListener('click', resetForm, false);
-    return;
-  };
-  // url encode form data for sending as post data
-  var encoded = Object.keys(data).map(function(k) {
-    return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
-  }).join('&');
-  xhr.send(encoded);
+function handleFormSubmit(event) {
+  event.preventDefault();
+  if(event.target.checkValidity()) {
+    elSubmitButton.value = 'Submitting...';
+    var data = getFormData();
+    var url = event.target.action;
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function() {
+      elArticleContent.style.display = 'none'; // hide form
+      document.getElementById('thankyou_message').style.display = 'block';
+      document.getElementById('reset_form').addEventListener('click', resetForm, false);
+      return;
+    };
+    // url encode form data for sending as post data
+    var encoded = Object.keys(data).map(function(k) {
+      return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+    }).join('&');
+    xhr.send(encoded);
+  }
 }
 
 function loaded() {
-  // bind to the submit event of our form
   elGForm.addEventListener('submit', handleFormSubmit, false);
-  var radios = document.querySelectorAll('input[name=dietary_requirements');
+  var radios = document.querySelectorAll('input[name=dietary_requirements]');
   forEach(radios, function(i, el) {
     el.addEventListener('change', function() {
       elOtherDetails.required = elOther.checked;
     });
   });
+  elNotAttending.addEventListener('change', function() {
+    elNoDietaryRequirements.required = !this.checked;
+  });
 }
 
 function resetForm() {
   elGForm.reset();
+  elSubmitButton.value = 'Submit RSVP';
+  elNoDietaryRequirements.required = true;
   elArticleContent.style.display = 'block';
   document.getElementById('thankyou_message').style.display = 'none';
 }
