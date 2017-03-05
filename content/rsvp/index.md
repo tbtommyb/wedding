@@ -20,11 +20,11 @@ Please fill out the following form for each person:
   <fieldset>
     <legend>Attending (required)</legend>
     <label><input type="radio" name="attending" value="yes" required>Yes</label>
-    <label><input type="radio" name="attending" value="no">No</label>
+    <label><input type="radio" name="attending" value="no" id="not-attending">No</label>
   </fieldset>
   <fieldset>
     <legend>Dietary requirements (required)</legend>
-    <label><input type="radio" name="dietary_requirements" value="none" required>None</label>
+    <label><input type="radio" name="dietary_requirements" value="none" id="none" required>None</label>
     <label><input type="radio" name="dietary_requirements" value="veg">Vegetarian</label>
     <label><input type="radio" name="dietary_requirements" value="vegan">Vegan</label>
     <label><input type="radio" name="dietary_requirements" value="other" id="other">Other</label>
@@ -40,5 +40,5 @@ Please fill out the following form for each person:
     <p>We're putting together an awesome playlist and need your help! Let us know the songs you think we should play.</p>
     <textarea cols="50" rows="10" name="music"></textarea>
   </fieldset>
-  <input type="submit" class="right-align btn navy"></input>
+  <input type="submit" id="submit" class="right-align btn navy" value="Submit RSVP">
 </form>

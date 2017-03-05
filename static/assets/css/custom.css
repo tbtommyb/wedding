@@ -15,7 +15,6 @@ body {
   width: 15em;
   position: absolute;
   right: 3em;
-  bottom: 1.5em;
 }
 
 .teddy-img img {
@@ -106,6 +105,19 @@ input[type="text"] {
   max-width: 15em;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  vertical-align: top;
+}
+
+input[type="checkbox"] {
+  vertical-align: text-bottom;
+}
+
 fieldset {
   border: rgba(15, 15, 50, 0.18) solid 1px;
 }
@@ -119,7 +131,10 @@ textarea {
   border: 2px solid rgba(15, 15, 50, 0.18);
   width: 100%;
   font-size: 1em;
+}
 
+#submit {
+  width: 10em;
 }
 
 /* Google Maps iframe */
