@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Tom and Georgie | 18 August 2017"
-baseurl = ""
+baseurl = "http://www.tomandgeorgie.co.uk/"
 theme = "hugo-smpl-theme"
 canonifyURLs = false
 
