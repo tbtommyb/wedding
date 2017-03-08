@@ -46,6 +46,7 @@ function handleFormSubmit(event) {
   event.preventDefault();
   if(event.target.checkValidity()) {
     elSubmitButton.value = 'Submitting...';
+    elSubmitButton.disabled = true;
     var data = getFormData();
     var url = event.target.action;
     var xhr = new XMLHttpRequest();
@@ -66,6 +67,7 @@ function handleFormSubmit(event) {
 }
 
 function loaded() {
+  elSubmitButton.disabled = false;
   elGForm.addEventListener('submit', handleFormSubmit, false);
   var radios = document.querySelectorAll('input[name=dietary_requirements]');
   forEach(radios, function(i, el) {
@@ -81,6 +83,7 @@ function loaded() {
 function resetForm() {
   elGForm.reset();
   elSubmitButton.value = 'Submit RSVP';
+  elSubmitButton.disabled = false;
   elNoDietaryRequirements.required = true;
   elArticleContent.style.display = 'block';
   document.getElementById('thankyou_message').style.display = 'none';
