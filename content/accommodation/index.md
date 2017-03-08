@@ -43,3 +43,5 @@ Approximately 20 minutes from the reception venue by car. These hotels are all w
 [Bath Place Hotel](http://www.bathplace.co.uk/)
 
 [Old Bank Hotel](https://www.oldbank-hotel.co.uk/)
+
+[Oxford Spires Hotel](https://www.oxfordspireshotel.co.uk/partner/oxford-spires/])
