@@ -28,7 +28,7 @@ Please fill out the following form for each person:
     <label><input type="radio" name="dietary_requirements" value="veg">Vegetarian</label>
     <label><input type="radio" name="dietary_requirements" value="vegan">Vegan</label>
     <label><input type="radio" name="dietary_requirements" value="other" id="other">Other</label>
-    <label>If other please specify: <input type="text" name="requirements_details" id="other_details"></label>
+    <label>Please specify any details:<input type="text" name="requirements_details" id="other_details"></label>
   </fieldset>
   <fieldset>
     <legend>Coaches (optional)</legend>
