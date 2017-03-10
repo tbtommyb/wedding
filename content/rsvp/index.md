@@ -23,8 +23,8 @@ Please fill out the following form for each person:
     <label><input type="radio" name="attending" value="no" id="not-attending">No</label>
   </fieldset>
   <fieldset>
-    <legend>Dietary requirements (required)</legend>
-    <label><input type="radio" name="dietary_requirements" value="none" id="none" required>None</label>
+    <legend>Dietary requirements</legend>
+    <label><input type="radio" name="dietary_requirements" value="none" id="none">None</label>
     <label><input type="radio" name="dietary_requirements" value="veg">Vegetarian</label>
     <label><input type="radio" name="dietary_requirements" value="vegan">Vegan</label>
     <label><input type="radio" name="dietary_requirements" value="other" id="other">Other</label>
@@ -40,5 +40,6 @@ Please fill out the following form for each person:
     <p>We're putting together an awesome playlist and need your help! Let us know the songs you think we should play.</p>
     <textarea cols="50" rows="10" name="music"></textarea>
   </fieldset>
+  <p class="is-error" id="error-message">Please enter first name, last name and whether you're attending.</p>
   <input type="submit" id="submit" class="right-align btn navy" value="Submit RSVP">
 </form>

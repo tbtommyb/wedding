@@ -1,10 +1,9 @@
 var elGForm = document.getElementById('gform');
 var elArticleContent = document.querySelector('.article-content');
-var elOther = document.getElementById('other');
-var elOtherDetails = document.getElementById('other_details');
-var elNotAttending = document.getElementById('not-attending');
-var elNoDietaryRequirements = document.getElementById('none');
 var elSubmitButton = document.getElementById('submit');
+var elErrorMessage = document.getElementById('error-message');
+var elsRequiredTextInputs = document.querySelectorAll("input[required][type='text']");
+var elsRadios = document.querySelectorAll("input[type='radio']");
 
 var forEach = function(array, callback, scope) {
   for(var i = 0; i < array.length; i++) {
@@ -42,49 +41,57 @@ function getFormData() {
   return data;
 }
 
+function handleErrorMessages() {
+  elErrorMessage.style.visibility = 'visible';
+  forEach(elsRequiredTextInputs, function(i, el) {
+    el.addEventListener('input', function() {
+      elErrorMessage.style.visibility = 'hidden';
+    });
+  })
+
+  forEach(elsRadios, function(i, el) {
+    el.addEventListener('change', function() {
+      elErrorMessage.style.visibility = 'hidden';
+    });
+  })
+}
+
 function handleFormSubmit(event) {
   event.preventDefault();
-  if(event.target.checkValidity()) {
-    elSubmitButton.value = 'Submitting...';
-    elSubmitButton.disabled = true;
-    var data = getFormData();
-    var url = event.target.action;
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onreadystatechange = function() {
-      elArticleContent.style.display = 'none'; // hide form
-      document.getElementById('thankyou_message').style.display = 'block';
-      document.getElementById('reset_form').addEventListener('click', resetForm, false);
-      return;
-    };
-    // url encode form data for sending as post data
-    var encoded = Object.keys(data).map(function(k) {
-      return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
-    }).join('&');
-    xhr.send(encoded);
+  if(!event.target.checkValidity()) {
+    handleErrorMessages();
+    return;
   }
+  elErrorMessage.style.visibility = 'hidden';
+  elSubmitButton.value = 'Submitting...';
+  elSubmitButton.disabled = true;
+  var data = getFormData();
+  var url = event.target.action;
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', url);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.onreadystatechange = function() {
+    elArticleContent.style.display = 'none'; // hide form
+    document.getElementById('thankyou_message').style.display = 'block';
+    document.getElementById('reset_form').addEventListener('click', resetForm, false);
+    return;
+  };
+  // url encode form data for sending as post data
+  var encoded = Object.keys(data).map(function(k) {
+    return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+  }).join('&');
+  xhr.send(encoded);
 }
 
 function loaded() {
   elSubmitButton.disabled = false;
   elGForm.addEventListener('submit', handleFormSubmit, false);
-  var radios = document.querySelectorAll('input[name=dietary_requirements]');
-  forEach(radios, function(i, el) {
-    el.addEventListener('change', function() {
-      elOtherDetails.required = elOther.checked;
-    });
-  });
-  elNotAttending.addEventListener('change', function() {
-    elNoDietaryRequirements.required = !this.checked;
-  });
 }
 
 function resetForm() {
   elGForm.reset();
   elSubmitButton.value = 'Submit RSVP';
   elSubmitButton.disabled = false;
-  elNoDietaryRequirements.required = true;
   elArticleContent.style.display = 'block';
   document.getElementById('thankyou_message').style.display = 'none';
 }

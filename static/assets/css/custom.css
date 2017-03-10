@@ -137,6 +137,14 @@ textarea {
   width: 10em;
 }
 
+.is-error {
+  color: red !important;
+}
+
+#error-message {
+  visibility: hidden;
+}
+
 /* Google Maps iframe */
 
 iframe {
