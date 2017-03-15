@@ -48,7 +48,7 @@ There will be a cash bar at the venue.
 
 We strongly recommend booking your taxis in advance, particularly at the end of the night as local companies may stop running at midnight. Some suggested companies are:
 
-* ABC Radio Taxis - 01865 242 242, [bookings@abcradiotaxis.co.uk](mailto:bookings@abcradiotaxis.co.uk)
+* ABC Radio Taxis - 01865 24 24 42, [bookings@abcradiotaxis.co.uk](mailto:bookings@abcradiotaxis.co.uk)
 
 * GO Green Taxi - 01235 811 100
 
