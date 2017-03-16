@@ -32,8 +32,9 @@ Please fill out the following form for each person:
   </fieldset>
   <fieldset>
     <legend>Coaches (optional)</legend>
-    <p>There will be limited spaces on coaches going from the ceremony to the wedding breakfast, allocated on a first-come-first-served basis. If you are attending the wedding breakfast and would like to request a coach place, please tick the box below. We will confirm via email.</p>
+    <p>There will be limited spaces on coaches going from the ceremony to the wedding breakfast, allocated on a first-come-first-served basis. If you are attending the wedding breakfast and would like to request a coach place, please tick the box below. We will email confirmation for your group if you provide an email address.</p>
     <label><input type="checkbox" name="coach" value="yes">Request a coach place</label>
+    <label><input type="text" name="email">Email</label>
   </fieldset>
   <fieldset>
     <legend>Music (optional)</legend>
