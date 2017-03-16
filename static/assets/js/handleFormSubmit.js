@@ -73,6 +73,7 @@ function handleFormSubmit(event) {
   xhr.onreadystatechange = function() {
     elArticleContent.style.display = 'none'; // hide form
     document.getElementById('thankyou_message').style.display = 'block';
+    document.body.scrollTop = 0;
     document.getElementById('reset_form').addEventListener('click', resetForm, false);
     return;
   };
