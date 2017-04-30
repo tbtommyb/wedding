@@ -6,7 +6,7 @@ image_source = "6.jpg"
 
 +++
 
-There will be plenty of camping space at the wedding venue.
+There will be plenty of camping space at the wedding venue. We will also have some space in a yurt if you don't want to bring a tent. If you're interested in staying in the yurt, please get in touch with Georgie or Tom (it's first come, first served!).
 
 If you're feeling a little less adventurous, below are some recommendations for hotels and B&Bs. There is also plenty of availability on Airbnb.com, both [close to the reception venue](https://www.airbnb.co.uk/s/Newbridge--Oxfordshire--United-Kingdom) and in [Oxford itself](https://www.airbnb.co.uk/s/Oxford--Oxfordshire--United-Kingdom).
 
